@@ -9,9 +9,7 @@ ExpressJS<br>
 EJS templating engine<br>
 MongoDB
 
-# Usage:
-install the project dependencies (see package.json for more information) <br>
-Start the project: npm run dev
+
 
 
 
