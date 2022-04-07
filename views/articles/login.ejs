@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Log In</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="form">
+        <div class="header">
+          <h2>Login</h2>
+        </div>
+        <div class="input-field">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="toggle_password">
+          <input
+            type="checkbox"
+            id="toggle"
+            name="toggle"
+            value="Show Password"
+          />
+          <label for="toggle" id="toggle"> Show Password</label><br />
+        </div>
+        <p><a href="./reset.html">Reset Password</a></p>
+        <p id="loginMessage"></p>
+        <button
+          type="submit"
+          class="btn btn-primary btn-lg btn-block"
+          name="Login"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>
