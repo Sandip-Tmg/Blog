@@ -1,0 +1,101 @@
+body {
+  background-color: #f3ebeb;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  padding: 10px;
+}
+
+.header {
+  font-size: 20px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.input-field input {
+  border: 2px solid #dad0df;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 95%;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+.form button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* styling for password field in reset page */
+#message {
+  display: none;
+  background: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  position: relative;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#message p {
+  padding: 5px 35px;
+  font-size: 14px;
+}
+
+/* Add a green text color and a correct sign when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an X when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+#passwordMatchMessage {
+  margin-top: 5px;
+  font-size: small;
+}
