@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="form">
+        <div class="header">
+          <h2>Register</h2>
+        </div>
+        <div class="input-field">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <p id="emailErrorMessage"></p>
+        </div>
+        <div class="input-field">
+          <label for="password1">Password</label><br />
+          <input
+            type="password"
+            id="password1"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            placeholder="Password"
+            required
+          />
+          <div id="message">
+            <p id="letter" class="invalid">A lowercase letter</p>
+            <p id="capital" class="invalid">A uppercase letter</p>
+            <p id="number" class="invalid">A number</p>
+            <p id="length" class="invalid">Minimum 8 characters</p>
+          </div>
+        </div>
+        <div class="input-field">
+          <label for="password2">Confirm Password</label><br />
+          <input
+            type="password"
+            id="password2"
+            placeholder="Confirm Password"
+            required
+          />
+          <p id="passwordMatchMessage"></p>
+        </div>
+        <div class="toggle_password">
+          <input
+            type="checkbox"
+            id="toggle"
+            name="toggle"
+            value="Show Password"
+          />
+          <label for="toggle"> Show Password</label><br />
+        </div>
+        <p>Already have an account? <a href="/login">Login</a></p>
+        <button type="submit" id="btn" name="Login">Reset</button>
+        <p id="successMessage"></p>
+      </form>
+    </div>
+    <script src="js/register.js"></script>
+  </body>
+</html>
