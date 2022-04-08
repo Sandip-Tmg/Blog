@@ -10,4 +10,12 @@ router.get("/", async (req, res) => {
   res.render("articles/index", { articles: articles });
 });
 
+router.get("/login", (req, res) => {
+  res.render("articles/login");
+});
+
+router.get("/register", (req,res)=>{
+  res.render("articles/register");
+})
+
 module.exports = router;
